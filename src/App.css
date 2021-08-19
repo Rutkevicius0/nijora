@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* BASIC */
+.fcw {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.service-container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2em;
+}
+.service {
+  width: 35em;
+  height: 35em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.service:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 10px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service__link-one,
+.service__link-two {
+  text-decoration: none;
+  font-size: 4em;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  padding: 3em 0 3em 0;
+}
+.service__picture-one,
+.service__picture-two {
+  position: absolute;
+  object-fit: cover;
+  width: 35em;
+  height: 35em;
+  z-index: -1;
+}
+
+/* MAIN NAV */
+.main-nav {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+}
+
+.main-nav__single-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+/* SUPIRKIMAS */
+
+.scrap-service-container {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* SLIDERIS */
+.services-slides {
+  position: relative;
+  height: 30em;
+}
+.slide-img {
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+}
+
+.slide-left {
+  position: absolute;
+  top: 16em;
+  left: 2em;
+}
+
+.slide-right {
+  position: absolute;
+  top: 16em;
+  right: 2em;
+}
+.slide-info {
+  position: relative;
+  top: 10em;
+  text-align: center;
+}
+.slide-title {
+  color: white;
+  font-size: 4em;
+  margin: 0;
 }
