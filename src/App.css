@@ -3,13 +3,6 @@
 body {
   font-family: Karla;
 }
-.fcw {
-  color: white;
-}
-.fixed {
-  position: fixed;
-  top: 0;
-}
 
 .service-container {
   margin: 0 auto;
@@ -164,4 +157,10 @@ body {
 .logo-text:hover {
   transform: scale(1.5);
   letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav__links {
+    flex-direction: column;
+  }
 }
