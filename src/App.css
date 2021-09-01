@@ -1,6 +1,14 @@
 /* BASIC */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+body {
+  font-family: Karla;
+}
 .fcw {
   color: white;
+}
+.fixed {
+  position: fixed;
+  top: 0;
 }
 
 .service-container {
@@ -44,10 +52,15 @@
 
 /* MAIN NAV */
 .main-nav {
+  top: 0;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
 }
 
 .main-nav__links {
@@ -60,8 +73,25 @@
 
 .main-nav__single-link {
   text-decoration: none;
-  color: black;
+  color: #737273;
   font-size: 1.2em;
+  position: relative;
+}
+.main-nav__single-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #f68144;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+.main-nav__single-link:hover::after,
+.main-nav__single-link:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 /* SUPIRKIMAS */
@@ -76,12 +106,14 @@
   position: relative;
   height: 30em;
 }
+
 .slide-img {
   width: 100%;
   height: 30em;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
+  transition: 0.5s ease;
 }
 
 .slide-left {
@@ -96,12 +128,40 @@
   right: 2em;
 }
 .slide-info {
+  transition: 0.5s ease;
   position: relative;
   top: 10em;
+  z-index: 3;
   text-align: center;
+  padding-bottom: 0.5em;
+  color: white;
+}
+.services-slides:hover .slide-info {
+  background-color: #f68244de;
+  color: #737273;
 }
 .slide-title {
-  color: white;
   font-size: 4em;
   margin: 0;
+}
+/* .slide-title:hover,
+.slide-address:hover,
+.slide-phone:hover {
+  color: #f68144;
+} */
+.logo-text {
+  letter-spacing: 2px;
+  text-shadow: #737273 2px 2px 2px;
+  font-stretch: expanded;
+  font-size: 2em;
+  padding: 0.3em 0;
+  margin: 0;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #f68144;
+  transition: ease-out transform 300ms;
+}
+.logo-text:hover {
+  transform: scale(1.5);
+  letter-spacing: 5px;
 }
