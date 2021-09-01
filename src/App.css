@@ -160,6 +160,25 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .service-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .service {
+    width: 25em;
+    height: 25em;
+  }
+  .service__picture-one,
+  .service__picture-two {
+    width: 25em;
+    height: 25em;
+    opacity: 0.8;
+  }
+  .service__link-one,
+  .service__link-two {
+    padding: 2em 0 1.5em 0;
+    margin-bottom: 1em;
+  }
   .main-nav__links {
     flex-direction: column;
   }
