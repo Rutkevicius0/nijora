@@ -46,6 +46,7 @@ body {
 /* MAIN NAV */
 .main-nav {
   top: 0;
+  left: 0;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -161,12 +162,13 @@ body {
   flex-direction: column;
   position: fixed;
   top: 58px;
-  left: 8px;
+  left: 0;
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px black solid;
 }
 .burger-nav__single-link {
+  padding-left: 1em;
   text-decoration: none;
   color: #737273;
   font-size: 1.2em;
