@@ -19,16 +19,28 @@ export const MainNav = () => {
           aria-hidden="true"
         ></i>
         <div className="burger-links">
-          <Link className="burger-nav__single-link" to="/">
+          <Link onClick={showLinks} className="burger-nav__single-link" to="/">
             I pagrindini meniu
           </Link>
-          <a className="burger-nav__single-link" href="#top">
+          <a
+            onClick={showLinks}
+            className="burger-nav__single-link"
+            href="#top"
+          >
             Pradzia
           </a>
-          <a className="burger-nav__single-link" href="#services">
+          <a
+            onClick={showLinks}
+            className="burger-nav__single-link"
+            href="#services"
+          >
             Paslaugos
           </a>
-          <a className="burger-nav__single-link" href="#contacts">
+          <a
+            onClick={showLinks}
+            className="burger-nav__single-link"
+            href="#contacts"
+          >
             Kontaktai
           </a>
         </div>
