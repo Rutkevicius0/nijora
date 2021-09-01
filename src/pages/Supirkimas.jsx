@@ -7,9 +7,6 @@ import Footer from '../components/Footer';
 export const Supirkimas = () => {
   return (
     <div className="scrap-service-container">
-      <div className="info">
-        <h1>miau</h1>
-      </div>
       <MainNav />
       <div className="services-slides">
         <div className="overlay"></div>
@@ -17,9 +14,6 @@ export const Supirkimas = () => {
           src="https://www.jdogjunkremoval.com/wp-content/uploads/2019/04/scrapmetal.jpg"
           alt=""
           className="slide-img"
-          onClick={() => {
-            document.getElementsByClassName('info').classlist.add = 'show';
-          }}
         />
         <div className="slide-info">
           <h1 className="slide-title">Metalo lauzo supirktuve</h1>

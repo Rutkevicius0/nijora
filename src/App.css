@@ -53,7 +53,7 @@ body {
   position: fixed;
   background-color: white;
   width: 100%;
-  z-index: 3;
+  z-index: 10;
 }
 
 .main-nav__links {
@@ -162,5 +162,9 @@ body {
 @media only screen and (max-width: 600px) {
   .main-nav__links {
     flex-direction: column;
+  }
+  .logo-text:hover {
+    letter-spacing: 2px;
+    transform: none;
   }
 }
